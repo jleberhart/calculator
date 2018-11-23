@@ -14,8 +14,7 @@ class CalculatorType extends AbstractType
     {
         $builder
             ->add('firstNumber', TextType::class)
-            ->add('maths', TextType::class)
-            ->add('maths', ChoiceType::class,array(
+            ->add('operator', ChoiceType::class,array(
                 'choices' => array(
                     'add' => '+',
                     'subtract' => '-',
